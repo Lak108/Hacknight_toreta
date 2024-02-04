@@ -1,0 +1,74 @@
+header {
+    font-family: "Copperplate","Fantasy";  
+    font-size: 2rem;
+    color: #331605d5;
+  }
+body {
+    font-family: Sacramento;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.unsplash.com/photo-1592355591829-aaae33fcff1d?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+header {
+    margin-bottom: 30px;
+}
+
+header img {
+    width: 120px;
+    height: 120px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.content {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better readability */
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    background-color:  rgba(219, 181, 140, 0.813);
+    color: white;
+    border: none;
+    border-radius: 25px;
+}
+
+button:hover {
+    background-color: rgba(206, 142, 73, 0.765)
+}
+
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Edu-Ease</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://cdn.vectorstock.com/i/preview-1x/89/87/student-education-gold-logo-vector-15008987.jpg" alt="Edu-ease Logo">
+            <h1>Edu-ease</h1>
+        </header>
+        <section class="content">
+            <form id="studentForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="stress">Stress Level (1-10):</label>
+                <input type="number" id="stress" min="1" max="10" required>
+
+                <label for="fatigue">Fatigue Level (1-10):</label>
+                <input type="number" id="fatigue" min="1" max="10" required>
+
+                
+
+                <label>Symptoms:</label>
+                <input type="radio" id="headache" name="symptoms"> <label for="headache">Headache</label>
+                <input type="radio" id="nausea" name="symptoms"> <label for="nausea">Nausea</label>
+                <input type="radio" id="muscleAches" name="symptoms"> <label for="muscleAches">Muscle Aches</label>
+                <input type="radio" id="increasedHeartbeat" name="symptoms"> <label for="increasedHeartbeat">Increased Heartbeat</label>
+                <input type="radio" id="otherSymptoms" name="symptoms"> <label for="otherSymptoms">Other Symptoms</label>
+                <input type="text" id="otherSymptomsInput" placeholder="Enter other symptoms">
+                
+
+
+
+                <label for="sleepDuration">Sleep Duration (hours):</label>
+                <input type="number" id="sleepDuration" step="0.5" required>
+
+                <label for="studyDuration">Study Duration (hours):</label>
+                <input type="number" id="studyDuration" step="0.5" required>
+
+                <label for="screenTime">Screen Time (hours):</label>
+                <input type="number" id="screenTime" step="0.5" required>
+
+                <label for="feelings">How do you feel?</label>
+                <textarea id="feelings" rows="4" placeholder="Enter your feelings"></textarea>
+
+                <button type="button" onclick="submitForm()">Submit</button>
+            </form>
+
+            <div id="result" class="result"></div>
+            <canvas id="dataChart" width="400" height="200"></canvas>
+
+        </section>
+    </div>
+    
+   
+    <button onclick="downloadUserData()">Download Data</button>
+
+    <script src="script.js"></script>
+
+    
+
+</body>
+</html>
